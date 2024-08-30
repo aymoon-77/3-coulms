@@ -1,0 +1,109 @@
+/*! imports */
+@font-face {
+    font-family: 'Lexend Deca';
+    src: url(./LexendDeca-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Big Shoulders Display';
+    src: url(./BigShouldersDisplay-Bold.ttf);
+    font-weight: 700;
+}
+/*! reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    line-height: 1.6;
+    font-size: 15px;
+    font-family: 'LexendDeca-Regular';
+    font-family: 'BigShouldersDisplay-Bold'; 
+}
+/*! global */
+:root{
+--Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+--Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+--Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+h1{
+    color: var(--Very-light-gray-background-headings-buttons);
+    margin: .7em 0;
+
+}
+p{
+    color: var(--Transparent-white-paragraphs);
+    margin: 1em 0;
+}
+button{
+    background-color: var(--Very-light-gray-background-headings-buttons);
+    width: 60%;
+    margin: 1em 0;
+    border: 1px solid transparent;
+    border-radius: 2em;
+    padding: .7em;
+    cursor: pointer;
+}
+
+/*! body */
+main{
+    width: 100%;
+    margin: 4em auto;  
+}
+.abdoo{
+   margin: 0 auto;
+   padding: 2em;
+    width: 80%;
+}
+#a1{
+    background-color: var(--Bright-orange);
+    border-top-left-radius:.625em ;
+    border-top-right-radius:.625em ;
+}
+#a2{
+    background-color: var(--Dark-cyan);
+}
+#a3{
+    background-color: var(--Very-dark-cyan);
+    border-bottom-left-radius:.625em ;
+    border-bottom-right-radius:.625em ;
+}
+.button-1{
+    color: var(--Bright-orange);
+}
+.button-2{
+    color: var(--Dark-cyan);
+}
+.button-3{
+    color: var(--Very-dark-cyan);
+}
+/*!media query*/
+@media screen and (min-width:1200px) {
+    main{
+        width: 60%;
+        margin: 10em auto;
+    }
+    .abdoo{
+        width: calc(80%/3);
+        display: inline-block;
+        margin-left:  -.3em;
+    }
+    #a1{
+        border-top-right-radius: 0;
+        border-bottom-left-radius: .625em;
+    }
+    #a3{
+        border-bottom-left-radius: 0;
+        border-top-right-radius: .625em;
+
+    }
+    h1{
+        margin: 1.5em 0;
+    }
+    p{
+        margin: 3em 0;
+    }
+}
